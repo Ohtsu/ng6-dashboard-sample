@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+body { margin: 0; }
+
+
+.line {fill:none; stroke:black;stroke-width: 1.5;}
+.line-0 {fill:none; stroke:#1f77b4;stroke-width: 1.5;stroke-dasharray:4,10;}
+.line-1 {fill:none; stroke:#ff7f0e;stroke-width: 1.5;stroke-dasharray:2,5.10;}
+.line-2 {fill:none; stroke:#2ca02c;stroke-width: 1.5;}
+.line-3 {fill:none; stroke:#d62728;stroke-width: 1.5;}
+.line-4 {fill:none; stroke:#9467bd;stroke-width: 1.5;}
+.line-5 {fill:none; stroke:#8c564b;stroke-width: 1.5;}
+.line-6 {fill:none; stroke:#e377c2;stroke-width: 1.5;}
+.line-7 {fill:none; stroke:#7f7f7f;stroke-width: 1.5;}
+.line-8 {fill:none; stroke:#bcbd22;stroke-width: 1.5;}
+.line-9 {fill:none; stroke:b#17becf;stroke-width: 1.5;}
+
+.bar { fill:#aaa; stroke:white;stroke-width: 1;}
+.bar-value { fill:black;font-size: 8pt;}
+.name { font-size: 10pt;text-anchor: middle}
+path {fill:white;stroke:black;stroke-width:0.5;}
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+}
+.axis_x line {
+    fill: none;
+    stroke: black;
+}
+.chart-title { fill:red;font-size: 18pt;text-anchor: middle;}
+.histogram-bar{fill:blue; stroke:white;stroke-width: 1;}
+.axis-x-text{ fill:blue;font-size: 12pt;}
+.treemap { stroke:black;fill:#777}		
+.treemap-label { font-size: 10pt;text-anchor: middle}
+.packlayout{ stroke:black;}
+.packlayout-label{ font-size: 10pt;text-anchor: middle}
+.pie-inner-title {font-size:9pt;text-anchor:middle;}
+.pieNum {font-size:10pt;text-anchor:middle;}
+.grid {stroke:gray;stroke-dasharray: 4,2;shape-rendering:crispEdges}
+
+.tree-node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+.tree-node text { 
+    font: 12px sans-serif; 
+}
+.tree-node-internal text {
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+.tree-node-link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+.force-links line {
+stroke: #999;
+stroke-opacity: 0.6;
+}
+
+.force-nodes circle {
+stroke: #fff;
+stroke-width: 1.5px;
+}

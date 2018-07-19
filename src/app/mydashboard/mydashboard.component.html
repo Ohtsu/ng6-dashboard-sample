@@ -1,0 +1,273 @@
+
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile  [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Bar
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="barTypeName" [configData]="configData"  [graphData]="barDataJson" [svgWidth]="'450'" [svgHeight]="'250'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Line
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="lineTypeName" [configData]="configData"  [graphData]="lineDataJson" [svgWidth]="'450'" [svgHeight]="'250'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Pie
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="pieTypeName" [configData]="configData"  [graphData]="pieDataJson" [svgWidth]="'450'" [svgHeight]="'250'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            ScatterPlot
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="scatterPlotTypeName" [configData]="configData"  [graphData]="scatterPlotDataJson" [svgWidth]="'500'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Histogram
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="histogramTypeName" [configData]="configData"  [graphData]="histogramDataJson" [svgWidth]="'450'" [svgHeight]="'250'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            PackLayout
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="packLayoutTypeName" [configData]="configData"  [graphData]="packLayoutDataJson" [svgWidth]="'450'" [svgHeight]="'250'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Tree
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="treeTypeName" [configData]="configData"  [graphData]="treeDataJson" [svgWidth]="'450'" [svgHeight]="'250'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            GeoMap
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="geoMapTypeName" [configData]="configData"  [graphData]="geoMapDataJson" [svgWidth]="'430'" [svgHeight]="'250'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            StackBar
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="stackBarTypeName" [configData]="configData"  [graphData]="stackBarDataJson" [svgWidth]="'450'" [svgHeight]="'250'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+      <mat-grid-tile  [colspan]="2" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Force
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="forceTypeName" [configData]="configData"  [graphData]="forceDataJson" [svgWidth]="'600'" [svgHeight]="'250'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            GeoOrthographic
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="geoOrthographicTypeName" [configData]="configData"  [graphData]="geoOrthographicDataJson" [svgWidth]="'450'" [svgHeight]="'400'"></lib-Ng6O2Chart> 
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Choropleth
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <lib-Ng6O2Chart [chartType]="choroplethTypeName" [configData]="configData"  [graphData]="choroplethDataJson" [svgWidth]="'450'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</div>
+
+
+<!-- 
+<h2>Pie</h2>
+<lib-Ng6O2Chart [chartType]="pieTypeName" [configData]="configData"  [graphData]="pieDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr>
+<h2>ScatterPlot</h2>
+<lib-Ng6O2Chart [chartType]="scatterPlotTypeName" [configData]="configData"  [graphData]="scatterPlotDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr>
+<h2>Histogram</h2>
+<lib-Ng6O2Chart [chartType]="histogramTypeName" [configData]="configData"  [graphData]="histogramDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr>
+<h2>PackLayout</h2>
+<lib-Ng6O2Chart [chartType]="packLayoutTypeName" [configData]="configData"  [graphData]="packLayoutDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr>
+<h2>Tree</h2>
+<lib-Ng6O2Chart [chartType]="treeTypeName" [configData]="configData"  [graphData]="treeDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr> 
+
+<h2>Line</h2>
+<lib-Ng6O2Chart [chartType]="lineTypeName" [configData]="configData"  [graphData]="lineDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr>
+<h2>GeoMap</h2>
+<lib-Ng6O2Chart [chartType]="geoMapTypeName" [configData]="configData"  [graphData]="geoMapDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr>
+<h2>StackBar</h2>
+<lib-Ng6O2Chart [chartType]="stackBarTypeName" [configData]="configData"  [graphData]="stackBarDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr>
+<h2>Choropleth</h2>
+<lib-Ng6O2Chart [chartType]="choroplethTypeName" [configData]="configData"  [graphData]="choroplethDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr>
+<h2>Force</h2>
+<lib-Ng6O2Chart [chartType]="forceTypeName" [configData]="configData"  [graphData]="forceDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart>
+<hr>
+<h2>GeoOrthographic</h2>
+<lib-Ng6O2Chart [chartType]="geoOrthographicTypeName" [configData]="configData"  [graphData]="geoOrthographicDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></lib-Ng6O2Chart> 
+
+-->
