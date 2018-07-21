@@ -1,27 +1,89 @@
-# Ng6DashboardSample
+﻿
+# _Ng6DashboardSample_ Dashboard sample based on Angular Material in Angular6
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## Development server
+_Ng6DashboardSample_ is a initial set for those who want to make dashboards by Angular Material in Angular6.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+_This full source code_,
+<https://github.com/Ohtsu/Ng6DashboardSample>
 
-## Code scaffolding
+_Video Explanation (Japanese)_,
+<https://youtu.be/3mkYx1YFGoc>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+_Video Explanation (English)_,
+<https://youtu.be/s4vXOOU9sp0>
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Overview 
+   - _Ng6DashboardSample_ is a dashboard sample based on Angular Material in Angular6.
 
-## Running unit tests
+   - _Ng6DashboardSample_ uses mat-grid, mat-card, mat-menu, mat-icon and so on.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   - _Ng6DashboardSample_ uses d3.js(ver4.3) and ng6-o2-chart.
+  
 
-## Running end-to-end tests
+## Prerequisite
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+   - node.js
+   - Typescript2
+   - Angular6
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Installation
+
+To install this project, run simply:
+
+```bash
+$ npm install 
+```
+## Start project
+
+If you start your local server as follows, you can get many kinds of charts in your dashboard by accessing **http://localhost:4200**.
+
+
+```bash
+$ ng serve -o
+```
+
+  - ***First Page*** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/ng6-material/Dashboard03.gif" width= "640" >
+
+
+## Version
+
+   - Ng6DashboardSample       : 0.0
+   - Angular6                   : 6.0.0
+   - TypeScript                 : 2.7.2
+   - @angular/material          : 6.2.1
+   - d3.js          		: 4.3.0
+   - ng6-o2-chart          	: 0.4.0
+   
+
+
+## Reference
+
+- "Schematics", 
+<https://material.angular.io/guide/schematics>
+
+- "Angular 5, Angular 6 Custom Library: Step-by-step guide", 
+<https://www.udemy.com/angular5-custom-library-the-definitive-step-by-step-guide/>
+
+
+- "Angular 5, Angular 6用 カスタムライブラリの作成: 完全ステップ・バイ・ステップ・ガイド", 
+<https://www.udemy.com/angular5-l/>
+
+
+## Change Log
+
+ - 2018.7.21 version 0.0 uploaded 
+
+## Copyright
+
+copyright 2018 by Shuichi Ohtsu (DigiPub Japan)
+
+
+## License
+
+MIT © [Shuichi Ohtsu](ohtsu@digipub-net.com)
