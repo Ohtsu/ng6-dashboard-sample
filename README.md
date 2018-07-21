@@ -6,7 +6,7 @@
 _Ng6DashboardSample_ is a initial set for those who want to make dashboards by Angular Material in Angular6.
 
 _This full source code_,
-<https://github.com/Ohtsu/Ng6DashboardSample>
+<https://github.com/Ohtsu/ng6-dashboard-sample>
 
 _Video Explanation (Japanese)_,
 <https://youtu.be/3mkYx1YFGoc>
